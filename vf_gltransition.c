@@ -550,8 +550,8 @@ static const AVFilterPad gltransition_inputs[] = {
   {
     .name = "to",
     .type = AVMEDIA_TYPE_VIDEO,
-  },
-  {NULL}
+  }/*,
+  {NULL}*/
 };
 
 static const AVFilterPad gltransition_outputs[] = {
@@ -559,8 +559,9 @@ static const AVFilterPad gltransition_outputs[] = {
     .name = "default",
     .type = AVMEDIA_TYPE_VIDEO,
     .config_props = config_output,
-  },
+  }/*,
   {NULL}
+  */
 };
 
 AVFilter ff_vf_gltransition = {

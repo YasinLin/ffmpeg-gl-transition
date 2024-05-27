@@ -338,6 +338,8 @@ static int setup_gl(AVFilterLink *inLink)
     av_log(ctx, AV_LOG_ERROR, "setup_gl ERROR");
     return -1;
   }
+  // 设置窗口的分辨率
+  glfwSetWindowSize(c->window, inLink->w, inLink->h);
   glfwMakeContextCurrent(c->window);
 
 #endif

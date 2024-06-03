@@ -9,6 +9,7 @@
 #include "framesync.h"
 
 #ifndef __APPLE__
+# define GLEW_STATIC
 #endif
 
 #ifdef __APPLE__
